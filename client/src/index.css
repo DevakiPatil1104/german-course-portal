@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Warm, playful palette */
+  --color-cream: #fff9f0;
+  --color-peach: #ffe8dd;
+  --color-blush: #fff0f6;
+  --color-coral: #ff6b6b;
+  --color-coral-dark: #ee5a5a;
+  --color-sunny: #ffd166;
+  --color-sunny-dark: #f4b942;
+  --color-sky: #4ecdc4;
+  --color-sky-dark: #3dbdb4;
+  --color-blue: #6cb6ff;
+  --color-lavender: #b794f6;
+  --color-mint: #7ed957;
+  --color-berry: #ff8fab;
+  --color-ink: #3d3d56;
+  --color-ink-soft: #6b6b8a;
+
+  /* Legacy aliases — mapped to friendly tones */
+  --color-german-black: #3d3d56;
+  --color-german-red: #ff6b6b;
+  --color-german-gold: #ffd166;
+  --color-primary: #ff6b6b;
+  --color-primary-light: #ff8fab;
+  --color-accent: #4ecdc4;
+  --color-accent-hover: #3dbdb4;
+
+  --font-sans: 'Nunito', system-ui, sans-serif;
+  --font-display: 'Fredoka', 'Nunito', system-ui, sans-serif;
+
+  --shadow-soft: 0 8px 32px rgb(255 107 107 / 0.12);
+  --shadow-card: 0 12px 40px rgb(61 61 86 / 0.08);
+  --shadow-btn: 0 6px 0 rgb(238 90 90 / 0.35);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-cream font-sans text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-linear-to-r from-coral via-berry to-lavender bg-clip-text text-transparent;
+  }
+
+  .bg-page-glow {
+    background-color: var(--color-cream);
+    background-image:
+      radial-gradient(circle at 10% 15%, rgb(255 209 102 / 0.35) 0%, transparent 42%),
+      radial-gradient(circle at 88% 8%, rgb(183 148 246 / 0.28) 0%, transparent 38%),
+      radial-gradient(circle at 75% 72%, rgb(78 205 196 / 0.22) 0%, transparent 40%),
+      radial-gradient(circle at 20% 85%, rgb(255 139 171 / 0.25) 0%, transparent 35%);
+  }
+
+  .nav-pill-active {
+    @apply rounded-full bg-coral/15 text-coral;
+  }
+
+  .nav-pill-idle {
+    @apply rounded-full text-ink-soft hover:bg-peach/80 hover:text-coral;
+  }
+}
