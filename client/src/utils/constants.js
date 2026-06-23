@@ -1,4 +1,4 @@
-export const SITE_NAME = 'German Learning Platform'
+export const SITE_NAME = 'German with Srushti'
 export const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://your-domain.com'
 
 export const CONTACT = {

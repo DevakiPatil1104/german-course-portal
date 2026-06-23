@@ -21,10 +21,6 @@ function Navbar() {
           className="group flex items-center gap-2"
           onClick={() => setIsMenuOpen(false)}
         >
-          <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-linear-to-br from-coral to-berry text-lg shadow-soft">
-            🇩🇪
-          </span>
-
           <span className="text-xl font-bold gradient-text">
             {SITE_NAME}
           </span>
