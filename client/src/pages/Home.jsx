@@ -12,7 +12,7 @@ function Home() {
         description="German language classes for school students, beginners and Goethe exam aspirants."
       />
 
-      <div className="container mx-auto px-4 py-18">
+      <div className="container mx-auto px-4 py-15">
 
         {/* HERO */}
         <section className="grid items-center gap-10 md:grid-cols-2">
@@ -52,13 +52,13 @@ function Home() {
             <img
               src="/images/home.png"
               alt="German Flag"
-              className="w-full max-w-md rounded-3xl shadow-xl"
+              className="w-full max-w-sm rounded-3xl shadow-xl"
             />
           </div>
         </section>
 
         {/* COURSES */}
-        <section className="mt-24">
+        <section className="mt-15">
           <PageHeader
             accent="sunny"
             title="Courses Offered"

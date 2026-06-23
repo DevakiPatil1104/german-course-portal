@@ -21,10 +21,20 @@ function CourseFinder() {
       {/* Chat Window */}
       {open && (
         <div className="fixed bottom-40 right-6 z-50 w-96 max-w-[calc(100vw-2rem)] rounded-3xl border border-peach bg-white p-5 shadow-xl">
-          <h3 className="text-lg font-bold text-ink">
-            Course Finder
-          </h3>
+          <div className="flex items-center justify-between">
+            <h3 className="text-lg font-bold text-ink">
+                Course Finder
+            </h3>
 
+            <button
+                onClick={() => setOpen(false)}
+                className="text-2xl font-bold text-ink-soft transition hover:text-ink"
+                aria-label="Close chat"
+            >
+                ×
+            </button>
+            </div>
+            
           <div className="mt-4">
             <div className="max-w-[85%] rounded-2xl bg-sky/10 p-3 text-sm text-ink">
                 Hi! I'll help you find the right German course.
