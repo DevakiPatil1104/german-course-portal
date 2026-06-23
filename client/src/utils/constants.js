@@ -1,9 +1,9 @@
 export const SITE_NAME = 'German with Srushti'
-export const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://your-domain.com'
+export const SITE_URL = 'https://your-domain.com'
 
 export const CONTACT = {
   phone: '+91 70666 17585',
-  email: ' srushti.kulkarni.pas09@gmail.com',
+  email: 'srushti.kulkarni.pas09@gmail.com',
   whatsapp: '7066617585',
 }
 
