@@ -1,5 +1,5 @@
 export const SITE_NAME = 'German with Srushti'
-export const SITE_URL = 'https://your-domain.com'
+export const SITE_URL = 'https://german-course-portal.vercel.app/'
 
 export const CONTACT = {
   phone: '+91 70666 17585',
