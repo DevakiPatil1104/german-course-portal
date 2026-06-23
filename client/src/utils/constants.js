@@ -1,4 +1,4 @@
-export const SITE_NAME = 'German with Srushti'
+export const SITE_NAME = 'The German Class'
 export const SITE_URL = 'https://german-course-portal.vercel.app/'
 
 export const CONTACT = {
